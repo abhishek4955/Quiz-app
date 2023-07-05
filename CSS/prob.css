@@ -1,0 +1,121 @@
+/* Set background color for all elements */
+* {
+  background-color: #fff;
+}
+
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the box container */
+.box {
+  width: 1000px;
+  height: 800px;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+/* Style the heading section */
+.heading {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Style the timer section */
+.timer {
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 1000;
+  padding: 10px;
+  border: 1px solid #0072e3;
+  border-radius: 50%;
+  color: #0072e3;
+}
+
+/* Style the question number section */
+#questionno {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #0072e3;
+  border-radius: 50%;
+  padding: 10px;
+  color: #0072e3;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* Style the question text section */
+#questiontxt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  border: 1.5px solid #ffc72c;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 5px;
+  background: transparent;
+  padding: 50px;
+}
+
+/* Style the options section */
+.options-que {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Hide the radio input */
+.options-que input[type="radio"] {
+  display: none;
+}
+
+/* Style the option labels */
+.options-que label {
+  flex-basis: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007fff;
+  cursor: pointer;
+}
+
+/* Style the option labels on hover */
+.options-que label:hover {
+  background-color: #0072e3;
+}
+
+/* Style the next button */
+.next-btn {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: large;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  background-color: #007fff;
+  border: 1px solid #007fff;
+}

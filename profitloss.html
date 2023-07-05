@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/profitloss.css">
+    
+    <title>Profit and Loss</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- Heading -->
+            <p class="heading">Profit and Loss</p>
+            
+            <!-- Timer display -->
+            <p class="timer"></p>
+            
+            <!-- Question section -->
+            <div class="question">
+                <span id="questionno"></span> <!-- Placeholder for question number -->
+                <span id="questiontxt"></span> <!-- Placeholder for question text -->
+            </div>
+            
+            <!-- Options section -->
+            <div class="options-que"> 
+                <!-- Option 1 -->
+                <input type="radio" name="option" id="opt1" value="opt1">
+                <label for="opt1" id="label1"></label><br>
+                
+                <!-- Option 2 -->
+                <input type="radio" name="option" id="opt2" value="opt2">
+                <label for="opt2" id="label2"></label><br>
+        
+                <!-- Option 3 -->
+                <input type="radio" name="option" id="opt3" value="opt3">
+                <label for="opt3" id="label3"></label><br>
+                
+                <!-- Option 4 -->
+                <input type="radio" name="option" id="opt4" value="opt4">
+                <label for="opt4" id="label4"></label><br>
+            </div>
+            
+            <!-- Next button -->
+            <button class="next-btn">Next Question</button>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="/Script/profitloss.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Set background color for all elements */
+* {
+  background-color: #fff;
+}
+
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the box container */
+.box {
+  width: 1000px;
+  height: 800px;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+/* Style the logo section */
+.logo {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 170px;
+}
+
+/* Style the text section */
+.box .text {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .text h1 {
+  color: #0072e3;
+  text-align: center;
+}
+
+/* Style the form section */
+.box .form {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.box .Input {
+  width: 600px;
+  border: 1px solid #3b3c36;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.box .form button {
+  border-radius: 5px;
+  border: 1px solid #3b3c36;
+  width: 100px;
+  height: 34px;
+  background: #0072e3;
+  color: #fff;
+  cursor: pointer; 
+}
+
+/* Style the text1 section */
+.box .text1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid #3b3c36;
+  width: 45%;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Style the category section */
+.box .category {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box .category h1 {
+  color: #0072e3;
+}
+
+/* Style the options section */
+.box .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  justify-content: space-between;
+}
+
+.box .options button {
+  flex-basis: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: larger;
+  background-color: #89cff0;
+  border: 1px solid #007fff;
+  cursor: pointer;
+}

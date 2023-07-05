@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/style.css">
+  
+  <title>Quiz Web Application</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/assets/textbook logo.png" alt="Test-book Logo">
+      </div>
+
+      <!-- Text section -->
+      <div class="text">
+        <h1>Hello User!</h1>
+        <h2>Enter Your Name to continue the Quiz.</h2>
+      </div>
+
+      <!-- Form section -->
+      <div class="form">
+        <!-- Name input field -->
+        <input class="Input" type="text" id="nameInput" placeholder="     ENTER YOUR NAME...">
+        <!-- Enter button -->
+        <button type="submit" onclick="startQuiz()">ENTER</button>
+      </div>
+
+      <!-- Text section -->
+      <div class="text1">
+        <h1>You'll have 10 seconds to answer each question</h1>
+      </div>
+
+      <!-- Category selection section -->
+      <div class="category">
+        <h1>Select Category</h1>
+        <div class="options">
+          <!-- Category options will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="/Script/index.js"></script>
+</body>
+</html>
