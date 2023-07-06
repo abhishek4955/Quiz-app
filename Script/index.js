@@ -23,14 +23,16 @@ function createCategoryButtons() {
 }
 
 // Function to start the quiz
+
 function startQuiz() {
   playerName = document.getElementById("nameInput").value.trim();
-  if (playerName === "") {
-    alert("Please enter your name!");
-  } else {
-    console.log("Player name:", playerName);
-    createCategoryButtons(); // Call createCategoryButtons() here to display category buttons
+  if (playerName.trim() === "") {
+    alert("Please enter your name to continue the quiz.");
+    return;
   }
+
+  console.log("Player name:", playerName);
+  createCategoryButtons(); // Call createCategoryButtons() here to display category buttons
 }
 
 // Function to handle category selection
@@ -44,6 +46,7 @@ function selectCategory(file) {
 
 // Event listener for the "Enter" button
 document.addEventListener("DOMContentLoaded", function() {
-  var enterButton = document.querySelector(".form button");
+  var enterButton = document.querySelector(".form .enter-btn");
   enterButton.addEventListener("click", startQuiz);
 });
+

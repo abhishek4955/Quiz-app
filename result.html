@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/result.css">
-    <script src="/script.js"></script>
-    <title>Result Page</title>
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="/CSS/result.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h1>Quiz Result</h1>
-            <div class="result_page">
-                <!-- User's name placeholder -->
-                <h3><span id="name">    </span>Your result is:</h3>
-                <!-- Total time taken placeholder -->
-                <h3>Total time taken: <span id="time_taken">    </span>Seconds</h3>
-                <!-- Total question count placeholder -->
-                <h3>Total Question: <span id="total_question">    </span></h3>
-                <!-- Attempted question count placeholder -->
-                <h3>Attempt: <span id="Attempt">    </span></h3>
-                <!-- Correct answer count placeholder -->
-                <h3>Correct: <span id="Correct">    </span></h3>
-                <!-- Wrong answer count placeholder -->
-                <h3>Wrong: <span id="Wrong">    </span></h3>
-                <!-- Percentage score placeholder -->
-                <h3>Percentage: <span id="Percentage">    </span></h3>
-            </div>
-            <div class="btn_result">
-                <!-- Button to start the quiz again -->
-                <button class="start_again">Start Again</button>
-                <!-- Button to go back to the home page -->
-                <button class="home">Go To Home</button>
-            </div>
-        </div>
+  <div class="container">
+    <div class="box">
+      <h1>Quiz Result</h1>
+      <div class="result_page">
+        <div class="result">Name: </div>
+        <div class="result">Total Time Taken: <span id="total-time"></span>s</div>
+        <div class="result">Total Questions: <span id="total-questions"></span></div>
+        <div class="result">Attempted Questions: <span id="attempted-questions"></span></div>
+        <div class="result">Correct Questions: <span id="correct-questions"></span></div>
+        <div class="result">Wrong Questions: <span id="wrong-questions"></span></div>
+        <div class="result">Percentage: <span id="percentage"></span>%</div>
+      </div>
+      <div class="btn_result">
+        <button onclick="retryQuiz()">Retry</button>
+        <button onclick="backToHome()">Home</button>
+      </div>
     </div>
-    <script src="/Script/result.js"></script>
+  </div>
+  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Retrieve query parameters from the URL
+    const totalTime = urlParams.get("totalTime");
+    const totalQuestions = urlParams.get("totalQuestions");
+    const attemptedQuestions = urlParams.get("attemptedQuestions");
+    const correctQuestions = urlParams.get("correctQuestions");
+    const wrongQuestions = urlParams.get("wrongQuestions");
+    const percentage = urlParams.get("percentage");
+    
+    // Update the result elements with the retrieved values
+    document.getElementById("total-time").textContent = totalTime;
+    document.getElementById("total-questions").textContent = totalQuestions;
+    document.getElementById("attempted-questions").textContent = attemptedQuestions;
+    document.getElementById("correct-questions").textContent = correctQuestions;
+    document.getElementById("wrong-questions").textContent = wrongQuestions;
+    document.getElementById("percentage").textContent = percentage;
+  </script>
 </body>
 </html>
