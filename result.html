@@ -18,8 +18,8 @@
         <div class="result">Percentage: <span id="percentage"></span>%</div>
       </div>
       <div class="btn_result">
-        <button onclick="retryQuiz()">Retry</button>
-        <button onclick="backToHome()">Home</button>
+        <button id="retry-button">Retry</button>
+        <button id="home-button">Home</button>
       </div>
     </div>
   </div>
@@ -42,6 +42,22 @@
     document.getElementById("correct-questions").textContent = correctQuestions;
     document.getElementById("wrong-questions").textContent = wrongQuestions;
     document.getElementById("percentage").textContent = percentage;
+    
+    // Retry quiz function
+    function retryQuiz() {
+      // Redirect to the quiz page or reset quiz state
+      window.location.href = "./index.html";
+    }
+    
+    // Home function
+    function backToHome() {
+      // Redirect to the home page
+      window.location.href = "./index.html";
+    }
+    
+    // Add event listeners to the buttons
+    document.getElementById("retry-button").addEventListener("click", retryQuiz);
+    document.getElementById("home-button").addEventListener("click", backToHome);
   </script>
 </body>
 </html>
